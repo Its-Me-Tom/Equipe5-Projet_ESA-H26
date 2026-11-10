@@ -1,1 +1,256 @@
+# =============================================================================
+# .gitignore - Projet ESA H26 (Equipe 5)
+# Couvre : Altium Designer, KiCad, STM32CubeIDE, STM32CubeMX
+# =============================================================================
 
+# -----------------------------------------------------------------------------
+# Altium Designer
+# -----------------------------------------------------------------------------
+# Historique et sauvegardes automatiques
+History/
+__Previews/
+*.~(*).*
+*.~*
+*.bak
+*.Bak
+*.backup
+*.autosave
+# Fichiers temporaires / verrous
+*.$$$
+*.lock
+*.pcbdoc.lck
+*.schdoc.lck
+*.PrjPCB.Lck
+*.PrjPcbStructure
+*.DsnWrk
+*.TMP
+*.tmp
+# Logs de compilation / ERC / DRC
+*.log
+*.LOG
+*.Report.Txt
+*.ERC
+*.DRC
+# Sorties generees (Project Outputs, Gerber, NC Drill, BOM, 3D)
+Project Outputs*/
+Project\ Outputs*/
+Project Logs*/
+Project\ Logs*/
+*.Cam
+*.CAM
+*.gbr
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.gm1
+*.gko
+*.gpt
+*.gpb
+*.g1
+*.g2
+*.gd1
+*.gg1
+*.gpi
+*.drr
+*.txt.drl
+*.ldp
+*.rep
+*.apr
+*.apr_lib
+*.ipc
+*.EXTREP
+*.xls
+*.xlsx
+*.csv
+*.html
+*.htm
+# Fichiers de cache / preferences locales
+*.PrjPcbVariants
+*.SchDocPreview
+*.PcbDocPreview
+*.ddb
+*.dbLib
+*.DbLib
+*.Thumbs.db
+*.Preferences.DXPPrf
+*.DXPPrf
+# Librairies compilees (garder les sources .SchLib/.PcbLib)
+*.IntLib
+
+# -----------------------------------------------------------------------------
+# KiCad
+# -----------------------------------------------------------------------------
+# Sauvegardes / autosaves
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.sch-bak
+*-bak
+*.bck
+*.kicad_pcb.bak
+*.kicad_sch.bak
+_autosave-*
+*-save.pro
+*-save.kicad_pcb
+*-save.kicad_sch
+# Caches / verrous / fichiers locaux
+fp-info-cache
+*.lck
+*.kicad_pro-bak
+~*.lck
+*.000
+*.swp
+# Netlist / rapports / exports
+*.net
+*.cmp
+*.erc
+*.drc
+*.rpt
+*.rdc
+*.xml
+*.pos
+# Fichiers de fabrication (regenerables)
+*.gbrjob
+*.drl
+*.g3
+*.g4
+*.step
+*.stp
+*.wrl
+*.vrml
+*.dxf
+*.pdf
+*.svg
+*.ps
+gerbers/
+gerber/
+fab/
+plots/
+3d/
+# Sauvegardes KiCad (dossier auto)
+*-backups/
+# Fichiers de librairie temporaires / cache
+sym-lib-table-bak
+fp-lib-table-bak
+# Fichiers de projet KiCad anciens
+*.pro-bak
+
+# -----------------------------------------------------------------------------
+# STM32CubeIDE (Eclipse)
+# -----------------------------------------------------------------------------
+# Dossiers de build
+Debug/
+Release/
+build/
+Build/
+# Metadonnees Eclipse / workspace
+# (.project et .cproject sont CONSERVES : necessaires pour importer le projet dans CubeIDE)
+.metadata/
+.settings/
+# .project
+# .cproject
+RemoteSystemsTempFiles/
+.launches/
+*.launch
+.classpath
+.externalToolBuilders/
+.loadpath
+.recommenders/
+.target
+.texlipse
+.buildpath
+.worksheet
+# Artefacts de compilation
+*.o
+*.obj
+*.d
+*.su
+*.cyclo
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.elf
+*.map
+*.list
+*.lst
+*.bin
+*.hex
+*.srec
+*.s19
+*.axf
+*.out
+*.exe
+*.app
+*.i
+*.ii
+*.gch
+*.pch
+*.dSYM/
+# Fichiers de debug / trace
+*.ioc.bak
+*.swv
+*.jlink
+*.jlink.bak
+*.cfg.bak
+*.gdbinit
+*.gdb_history
+.gdb_history
+trace.log
+# Temporaire STM32CubeIDE
+.sconsign.dblite
+*.pyc
+__pycache__/
+STM32CubeIDE/.settings/
+STM32CubeIDE/Debug/
+STM32CubeIDE/Release/
+
+# -----------------------------------------------------------------------------
+# STM32CubeMX
+# -----------------------------------------------------------------------------
+# Rapports et sauvegardes (le .ioc est conserve)
+*.txt.bak
+*.ioc~
+Middlewares/ST/*/Documentation/
+# Drivers / middlewares regenerables (decommenter si vous ne voulez pas les versionner)
+# Drivers/
+# Middlewares/
+
+# -----------------------------------------------------------------------------
+# Editeurs / IDE / OS
+# -----------------------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+# JetBrains / CLion
+.idea/
+cmake-build-*/
+# Vim / Emacs
+*~
+*.swo
+\#*\#
+.\#*
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+# Linux
+.directory
+.Trash-*
+.nfs*
